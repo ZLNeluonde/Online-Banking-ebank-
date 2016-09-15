@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <link href ="login.css" rel ="stylesheet" type ="text/css"/>
+        <link href ="main.css" rel ="stylesheet" type ="text/css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function gen (){
+                var mee = 11 + Math.floor(Math.random()* 12)+1;
+                var meea = 11 + Math.floor(Math.random()* 12)+1;
+                var mees = 11 + Math.floor(Math.random()* 12)+1;
+                var gift = 45 + ""+ mee+""+meea+""+mees;
+                document.getElementById('mpho').value = ''+gift;
+                //alert(gift);
+            }
+        </script>
+    <body>
+  
+ 
+     <div id="wrapper">
+         <h1>EBANK<small>The Future is now</small></h1>
+  <div id="content">
+      <nav>
+  <ul id = "justaNav">
+    <li><a href="REGISR.jsp">Sign Up</a></li>
+    <li><a href="NEW.jsp">Sign in</a></li>	
+    <li><a href="index.html">About us</a></li>
+    <li><a href="contact.jsp">Contact Us</a></li>
+    <li><a href="profile.html">View profile</a></li>
+  </ul>
+      </nav>
+  </div>
+         
+</div >
+
+ <div id ="login">
+     <h2>Open an account</h2>
+      <form Class = "boxCont" action = "createaccount.jsp">
+          
+
+    <center>    
+        
+        
+                    
+                    
+              
+                    <div>
+                        <label>Full Names</label>
+                        <input type="text" name="Full_Name" value="" placeholder="Full Name" onchange="gen ()" />
+                    </div>
+                    <div>
+                        <label>Date of birth</label>
+                        <input type= "text" name = "Date_of_Birth" value="" placeholder="Date of Birth"/>
+                    </div>
+                     <div>
+                        <label>ID</label>
+                        <input type= "text" name = "ID" value="" placeholder="ID"/>
+                     </div>
+                     <div>
+                        <label>Phone</label>
+                        <input type= "text" name = "Phone" value="" placeholder="Phone"/>
+                     </div>
+                    <div>
+                        <label>Email</label>
+                       <input type= "text" name = "email" value="" placeholder="Email"/>
+                    </div>
+                     <div>
+                        <label>Account</label>
+                        <input type="text" name="account" value="" placeholder="Account" id="mpho" onchange="gen ()"/>
+                    </div>
+                   
+                     <div>
+                         <input type="submit" id="submit" name="submit" value="submit" class="btn left" />
+<!--                        <input type="submit" value="Submit details" />-->
+                        <input type="reset" id="reset" name="reset" value="reset" class="btn right" />
+<!--                        <input type="reset" value="Reset" />-->
+                    </div>
+                     <div>
+                        <td colspan="2">Already registered!! <a href="NEW.jsp">Login Here</a>
+                     </div>
+           
+            </center>
+    
+    
+        </form>
+</div>
+    
+      </body>
+</html>
